@@ -11,7 +11,7 @@ public class EnemyAwareness : MonoBehaviour
 
     private void Start()
     {
-        playersTransform = FindObjectOfType<PlayerMove>().transform;
+        playersTransform = FindFirstObjectByType<PlayerMove>().transform;
     }
 
     private void Update()
