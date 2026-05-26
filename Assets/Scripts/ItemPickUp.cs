@@ -3,11 +3,11 @@ using UnityEngine;
 public class ItemPickUp : MonoBehaviour
 {
 
-    [SerializeField] private bool isHealth;
-    [SerializeField] private bool isArmor;
-    [SerializeField] private bool isAmmo;
+    public bool isHealth;
+    public bool isArmor;
+    public bool isAmmo;
 
-    [SerializeField] private int amount;
+    public int amount;
 
     void Start()
     {
