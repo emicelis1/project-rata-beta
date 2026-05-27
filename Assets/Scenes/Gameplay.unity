@@ -3565,6 +3565,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   _doorAnim: {fileID: 780839420}
   _areaToSpawn: {fileID: 51710091}
+  _requiresKey: 0
+  _reqRed: 0
+  _reqGreen: 0
+  _reqBlue: 0
 --- !u!65 &1649858549
 BoxCollider:
   m_ObjectHideFlags: 0
