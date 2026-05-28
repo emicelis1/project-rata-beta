@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 30899264}
   - component: {fileID: 30899266}
   m_Layer: 0
-  m_Name: MuiscManager
+  m_Name: MusicManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,8 +150,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicManager
   menuMusic: {fileID: 8300000, guid: 52170ad9fd51b9049a11347ddf94116a, type: 3}
-  level1Music: {fileID: 8300000, guid: bfef33a6cb3d2c842a444d311ee59316, type: 3}
-  level3Music: {fileID: 8300000, guid: c7616d84a1f90a849b433f771d910b62, type: 3}
+  levelsMusic: {fileID: 8300000, guid: bfef33a6cb3d2c842a444d311ee59316, type: 3}
+  splashMusic: {fileID: 8300000, guid: 360b1219f4172f7489f782ed9cb5694a, type: 3}
+  level4Music: {fileID: 8300000, guid: c7616d84a1f90a849b433f771d910b62, type: 3}
+  musicVolume: 1
 --- !u!4 &30899265
 Transform:
   m_ObjectHideFlags: 0
@@ -182,7 +184,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

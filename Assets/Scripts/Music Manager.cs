@@ -9,8 +9,9 @@ public class MusicManager : MonoBehaviour
     public AudioClip menuMusic;
 
     [Header("Musica por Nivel")]
-    public AudioClip level1Music;
-    public AudioClip level3Music;
+    public AudioClip levelsMusic;
+    public AudioClip splashMusic;
+    public AudioClip level4Music;
 
     [Header("Volumen")]
     [Range(0f, 1f)]
@@ -56,13 +57,18 @@ public class MusicManager : MonoBehaviour
         {
             clip = menuMusic;
         }
-        else if (sceneName == "LEVEL1" || sceneName == "LEVEL2")
+        else if (sceneName == "LEVEL1" || sceneName == "LEVEL2" || sceneName == "Level3")
         {
-            clip = level1Music;
+            clip = levelsMusic;
         }
-        else if (sceneName == "LEVEL3")
+        else if (sceneName == "Level4")
         {
-            clip = level3Music;
+            clip = level4Music;
+        }
+
+        else if (sceneName == "SplashScene")
+        {
+            clip = splashMusic;
         }
 
         if (clip != null)

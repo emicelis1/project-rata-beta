@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: "Assets/Scenes/Cr\xE9ditos.unity"
     guid: 54a74cab7aa2c7742b2897e202fbe699
   - enabled: 1
+    path: Assets/Scenes/SplashScence.unity
+    guid: aa6ce98fd804dac409fd97d0ed911a84
+  - enabled: 1
     path: Assets/Scenes/LEVEL1.unity
     guid: db7dac99f3bc0304baf9cf2333e714b8
   - enabled: 1

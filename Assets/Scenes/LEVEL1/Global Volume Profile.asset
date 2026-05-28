@@ -51,16 +51,16 @@ MonoBehaviour:
     m_Value: 1
   ScreenBend:
     m_OverrideState: 1
-    m_Value: 4
+    m_Value: 7.8
   ScreenRoundness:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.87
   VignetteOpacity:
     m_OverrideState: 1
     m_Value: 1
   ScanLineVerticalOpacity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.807
   ScanLineHorizontalOpacity:
     m_OverrideState: 1
     m_Value: 1
@@ -75,22 +75,22 @@ MonoBehaviour:
     m_Value: 0.2
   NoiseScale:
     m_OverrideState: 1
-    m_Value: 0.9
+    m_Value: 0.848
   NoiseRBGOffsetX:
     m_OverrideState: 1
-    m_Value: 0.4
+    m_Value: 0.241
   NoiseRBGOffsetY:
     m_OverrideState: 1
-    m_Value: 0.7
+    m_Value: 0.715
   NoiseSpeed:
     m_OverrideState: 1
-    m_Value: 0.1
+    m_Value: 0.244
   NoiseFade:
     m_OverrideState: 1
-    m_Value: 0.55
+    m_Value: 0.667
   VhsSmear:
     m_OverrideState: 1
-    m_Value: 0.95
+    m_Value: 0.93
   EnableTrackerLine:
     m_OverrideState: 1
     m_Value: 1
@@ -129,7 +129,7 @@ MonoBehaviour:
     m_Value: 100
   UnsharpAmount:
     m_OverrideState: 1
-    m_Value: 1.5
+    m_Value: 3.74
   UnsharpRadius:
     m_OverrideState: 1
     m_Value: 1
@@ -147,16 +147,16 @@ MonoBehaviour:
     m_Value: {r: 0.7, g: 0.6, b: 0.9, a: 1}
   Gamma:
     m_OverrideState: 1
-    m_Value: 0.374
+    m_Value: 0.4
   Brightness:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.615
   Contrast:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.518
   Saturation:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.385
   Hue:
     m_OverrideState: 1
     m_Value: 0
@@ -196,7 +196,7 @@ MonoBehaviour:
     m_Value: {x: 1920, y: 1080}
   ColorPrecision:
     m_OverrideState: 1
-    m_Value: 5
+    m_Value: 8.5
   EnableDither:
     m_OverrideState: 1
     m_Value: 1
@@ -205,7 +205,7 @@ MonoBehaviour:
     m_Value: 2
   DitherPattern:
     m_OverrideState: 1
-    m_Value: 7
+    m_Value: 9
   DitherPixelPerfect:
     m_OverrideState: 1
     m_Value: 1
@@ -214,7 +214,7 @@ MonoBehaviour:
     m_Value: 1
   DitherThreshold:
     m_OverrideState: 1
-    m_Value: 0.551
+    m_Value: 0.889
   EnableFog:
     m_OverrideState: 0
     m_Value: 1
@@ -223,7 +223,7 @@ MonoBehaviour:
     m_Value: {r: 0.5471698, g: 0.5445888, b: 0.5445888, a: 1}
   FogDensity:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.019
   FogNoiseStrength:
     m_OverrideState: 1
     m_Value: 0.1
