@@ -8707,6 +8707,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 08349dcdab7b3624b81a46827b701e66, type: 2}
+    - target: {fileID: 4195313890984401872, guid: 5de41021eb1d52b4eb41793257140644, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.105
+      objectReference: {fileID: 0}
     - target: {fileID: 4214055487541844253, guid: 5de41021eb1d52b4eb41793257140644, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -9047,6 +9051,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 0ff94069ab323214ab6f5669dbbdfad2, type: 2}
+    - target: {fileID: 7244169676286427644, guid: 5de41021eb1d52b4eb41793257140644, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 7328513117715903696, guid: 5de41021eb1d52b4eb41793257140644, type: 3}
       propertyPath: m_LocalPosition.x
       value: 168.75279
@@ -26020,7 +26028,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2134529207
 Transform:
   m_ObjectHideFlags: 0
