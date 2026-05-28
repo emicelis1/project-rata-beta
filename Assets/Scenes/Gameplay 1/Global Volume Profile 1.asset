@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5344324873365852151
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dbed17f5f145d64589ad7ae3c637fc3, type: 3}
+  m_Name: PSXEffectSettings
+  m_EditorClassIdentifier: ColbyO.VNTG::ColbyO.VNTG.PSX.PSXEffectSettings
+  active: 1
+  Enabled:
+    m_OverrideState: 1
+    m_Value: 1
+  ShowInSceneView:
+    m_OverrideState: 1
+    m_Value: 0
+  PixelResolution:
+    m_OverrideState: 1
+    m_Value: {x: 256, y: 256}
+  ColorPrecision:
+    m_OverrideState: 1
+    m_Value: 53
+  EnableDither:
+    m_OverrideState: 1
+    m_Value: 1
+  DitherMode:
+    m_OverrideState: 1
+    m_Value: 2
+  DitherPattern:
+    m_OverrideState: 1
+    m_Value: 3
+  DitherPixelPerfect:
+    m_OverrideState: 1
+    m_Value: 1
+  DitherScale:
+    m_OverrideState: 1
+    m_Value: 1
+  DitherThreshold:
+    m_OverrideState: 1
+    m_Value: 0.055
+  EnableFog:
+    m_OverrideState: 0
+    m_Value: 1
+  FogColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.4716981, g: 0.44722322, b: 0.44722322, a: 0}
+  FogDensity:
+    m_OverrideState: 1
+    m_Value: 1
+  FogNoiseStrength:
+    m_OverrideState: 1
+    m_Value: 0.1
+  FogEdgeSmoothness:
+    m_OverrideState: 1
+    m_Value: 0.5
+  FogNoiseScale:
+    m_OverrideState: 1
+    m_Value: 0.5
+  FogNoiseStart:
+    m_OverrideState: 1
+    m_Value: 0.7
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: Global Volume Profile 1
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.VolumeProfile
+  components:
+  - {fileID: -5344324873365852151}

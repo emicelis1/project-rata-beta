@@ -16,6 +16,7 @@ public class PlayerHealth : MonoBehaviour
     {
         health = maxHealth;
         CanvasManager.Instance.UpdateHealth(health);
+        CanvasManager.Instance.UpdateArmor(armor);
         // solo para testear
     }
 
@@ -84,6 +85,8 @@ public class PlayerHealth : MonoBehaviour
         {
             health = maxHealth;
         }
+
+        CanvasManager.Instance.UpdateHealth(health);
     }
 
     public void GiveArmor(int amount, GameObject pickup)
