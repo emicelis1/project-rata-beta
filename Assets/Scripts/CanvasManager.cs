@@ -40,13 +40,13 @@ public class CanvasManager : MonoBehaviour
 
     public void UpdateHealth(int healthValue)
     {
-        health.text = healthValue.ToString();
+        health.text = healthValue.ToString() + "%";
         UpdateHealthIndicator(healthValue);
     }
 
     public void UpdateArmor(int armorValue)
     {
-        armor.text = armorValue.ToString();
+        armor.text = armorValue.ToString() + "%";
     }
 
     public void UpdateHealthIndicator(int healthValue)
