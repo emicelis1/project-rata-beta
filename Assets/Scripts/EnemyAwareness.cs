@@ -6,7 +6,6 @@ public class EnemyAwareness : MonoBehaviour
 {
     public float awarenessRadius = 8f;
     public bool isAggro;
-    public Material aggroMat;
     private Transform playersTransform;
 
     private void Start()
@@ -22,10 +21,6 @@ public class EnemyAwareness : MonoBehaviour
         {
             isAggro = true;
         }
-
-        if (isAggro)
-        {
-            GetComponent<MeshRenderer>().material = aggroMat;
-        }
+        
     }   
 }
