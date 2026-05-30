@@ -23,16 +23,23 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        // beginning of update set the animations rotational index
+        // Al inicio del update seteamos el índice de rotación de las animaciones
         spriteAnim.SetFloat("spriteRot", angleToPlayer.lastIndex);
 
         if (enemyHealth <= 0)
         {
-            enemyManager.RemoveEnemy(this);
+            // Validamos si realmente existe el enemyManager antes de llamarlo
+            if (enemyManager != null)
+            {
+                enemyManager.RemoveEnemy(this);
+            }
+            else
+            {
+                Debug.LogWarning($"Ojo: Se destruyó {gameObject.name} pero no se encontró un EnemyManager en la escena.");
+            }
+
             Destroy(gameObject);
         }
-
-        // any animations we call will have updated index
     }
 
     public void TakeDamage(float damage)
