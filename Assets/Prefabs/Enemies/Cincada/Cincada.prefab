@@ -246,7 +246,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9154992715077976323}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de782d5c66b113c4a83348fb0a151313, type: 3}
   m_Name: 
@@ -279,6 +279,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fa1f98e9835a2a449fb895b50f50f14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  typeOfEnemy: 0
+  projectilePrefab: {fileID: 0}
+  firePoint: {fileID: 0}
+  fireRate: 1.5
+  waypoints: []
+  waypointThreshold: 0.5
 --- !u!114 &9172027851607920806
 MonoBehaviour:
   m_ObjectHideFlags: 0
