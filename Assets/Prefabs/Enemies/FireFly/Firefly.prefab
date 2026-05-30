@@ -312,9 +312,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   typeOfEnemy: 1
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 2235802318145681399, guid: 25317bb422182914ba83a231cd22f5a5, type: 3}
   firePoint: {fileID: 6976333027344055901}
   fireRate: 1.5
+  waypoints: []
+  waypointThreshold: 0.5
 --- !u!114 &8041648904523637849
 MonoBehaviour:
   m_ObjectHideFlags: 0
