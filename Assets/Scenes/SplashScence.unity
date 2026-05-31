@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 960131269}
   - component: {fileID: 960131271}
   - component: {fileID: 960131270}
-  - component: {fileID: 960131272}
+  - component: {fileID: 960131273}
   m_Layer: 5
   m_Name: Historia
   m_TagString: Untagged
@@ -266,14 +266,14 @@ RectTransform:
   m_GameObject: {fileID: 960131268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -117}
-  m_LocalScale: {x: 2.5998, y: 2.5998, z: 2.5998}
+  m_LocalScale: {x: 2.7637675, y: 2.7637675, z: 2.7637675}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1857783106}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -521, y: 35}
+  m_AnchoredPosition: {x: -432, y: -633}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &960131270
@@ -296,7 +296,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+  m_text: "Wisuka un rat\xF3n de campo japon\xE9s proveniente de una tierra humilde
+    llamada y en camino a ser un guerrero aprendiz, se ve obligado a tener que hablar
+    con el se\xF1or de sus tierras en discusi\xF3n a las intensas guerras afectando
+    su pueblo y el trato a su gente. Con esto en mente a la par de ser el \xFAnico
+    con experiencia de guerrero novato de su pueblo, se embarca en un viaje hacia
+    el castillo del se\xF1or de aquellas tierras llamado Kabutetsu (un escarabajo
+    japon\xE9s), que estar\xE1 en ubicado en el \xFAltimo piso mientras que Wisuka
+    deber\xE1 de cruzar entre enemigos pasando por habitaciones llenas de sus soldados
+    si es que quiere llegar con el. ww"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -376,28 +384,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960131268}
   m_CullTransparentMesh: 1
---- !u!95 &960131272
-Animator:
-  serializedVersion: 7
+--- !u!111 &960131273
+Animation:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960131268}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 242c7702fbaa6364485fa679f6b351db, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: b01f01ec22f9ff44aa24efe82ab2d8e6, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
   m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &1522316193
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,7 +908,7 @@ Animator:
   m_GameObject: {fileID: 1857783101}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 15b6a14ef91e53943bd069194ef8b37b, type: 2}
+  m_Controller: {fileID: 9100000, guid: aab592c0a99e5b144adfeb103e53ea0e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
