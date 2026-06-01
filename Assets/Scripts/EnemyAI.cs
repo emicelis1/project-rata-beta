@@ -5,13 +5,13 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-    
+ 
     public enum EnemyType { Melee, Ranged, Centipede }
 
-    [Header("Variante de Enemigo")]
+    [Header("Enemy Variant")]
     public EnemyType typeOfEnemy = EnemyType.Melee;
 
-    [Header("Configuración de Ataque Ranged")]
+    [Header("Ranged Settings")]
     public GameObject projectilePrefab;
     public Transform firePoint;
     public float fireRate = 1.5f;
@@ -21,6 +21,9 @@ public class EnemyAI : MonoBehaviour
     public Transform[] waypoints;        // Arrastra aquí los puntos por donde caminará
     public float waypointThreshold = 0.5f; // Qué tan cerca debe estar del punto para ir al siguiente
     private int currentWaypointIndex = 0;
+
+    [Header("Línea de Visión")]
+    public LayerMask visionObstacleLayers; 
 
     private EnemyAwareness enemyAwareness;
     private Transform playersTransform;
@@ -33,18 +36,25 @@ public class EnemyAI : MonoBehaviour
         playersTransform = FindFirstObjectByType<PlayerMove>().transform;
         enemyNavMeshAgent = GetComponent<NavMeshAgent>();
         enemyScript = GetComponent<Enemy>();
+
+        
+        if (visionObstacleLayers == 0)
+        {
+            visionObstacleLayers = LayerMask.GetMask("Default", "MapTerrain"); 
+        }
     }
 
     private void Update()
     {
-        // CONTROL ESPECIAL: Si es un ciempiés, ejecuta su lógica directo e ignora la detección
+        
         if (typeOfEnemy == EnemyType.Centipede)
         {
+            
             ControlCentipedeMovement();
             return;
         }
 
-        // Lógica normal para Melee y Ranged (requieren detección)
+        
         if (!enemyAwareness.isAggro)
         {
             if (enemyNavMeshAgent != null && enemyNavMeshAgent.isOnNavMesh)
@@ -83,31 +93,54 @@ public class EnemyAI : MonoBehaviour
 
         if (Time.time >= nextFireTime)
         {
-            Shoot();
-            nextFireTime = Time.time + fireRate;
+            
+            if (CanSeePlayer())
+            {
+                Shoot();
+                nextFireTime = Time.time + fireRate;
+            }
         }
     }
 
     private void ControlCentipedeMovement()
     {
-        // Si no hay puntos definidos, no hace nada
         if (waypoints == null || waypoints.Length == 0) return;
 
         if (enemyNavMeshAgent != null && enemyNavMeshAgent.isOnNavMesh)
         {
-            // Le decimos al NavMeshAgent que vaya al waypoint actual
+            
             enemyNavMeshAgent.SetDestination(waypoints[currentWaypointIndex].position);
 
-            // Verificamos la distancia entre el enemigo y el waypoint actual
+            
             float distanceToWaypoint = Vector3.Distance(transform.position, waypoints[currentWaypointIndex].position);
 
-            // Si ya llegó al punto cercano, pasa al siguiente
+            
             if (distanceToWaypoint <= waypointThreshold)
             {
-                // Incrementa el índice y vuelve a 0 si llega al final de la lista (Bucle continuo)
+                
                 currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
             }
         }
+    }
+
+    
+    private bool CanSeePlayer()
+    {
+        if (playersTransform == null || firePoint == null) return false;
+
+       
+        Vector3 targetDir = (playersTransform.position - firePoint.position).normalized;
+        float distanceToPlayer = Vector3.Distance(firePoint.position, playersTransform.position);
+
+        
+        if (Physics.Raycast(firePoint.position, targetDir, out RaycastHit hit, distanceToPlayer, visionObstacleLayers))
+        {
+       
+            return false;
+        }
+
+        
+        return true;
     }
 
     private void Shoot()

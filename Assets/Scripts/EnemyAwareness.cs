@@ -21,6 +21,9 @@ public class EnemyAwareness : MonoBehaviour
         {
             isAggro = true;
         }
-        
-    }   
+        else
+        {
+            isAggro = false;
+        }
+    }
 }

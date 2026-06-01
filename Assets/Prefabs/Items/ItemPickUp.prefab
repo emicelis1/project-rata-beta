@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1108488609324365618}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.73, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 4626119034112484583}
   - component: {fileID: 2424062961494514633}
   - component: {fileID: 5715220682179402367}
+  - component: {fileID: -7353182106928397435}
   m_Layer: 0
   m_Name: ItemPickUp
   m_TagString: Untagged
@@ -183,4 +184,18 @@ MonoBehaviour:
   isHealth: 1
   isArmor: 0
   isAmmo: 0
-  amount: 30
+  amount: 50
+--- !u!114 &-7353182106928397435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029784692117823686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1a379516e6639c4697918a8e8cb8553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteRotator
+  _doomMode: 1
+  _spinSpeed: 100

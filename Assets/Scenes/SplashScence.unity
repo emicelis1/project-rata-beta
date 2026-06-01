@@ -296,10 +296,22 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+  m_text: "en los inicios de una Jap\xF3n feudal, donde el shogunato estaba en su
+    punto mas alto, habia un peque\xF1o raton de una humilde aldea llamado Wisuka,
+    quien estaba entrenando para ser Samurai en ascenso. Sin emabrgo, el se\xF1or
+    de sus tierras Kabutetsu, con todo el revuelo de la guerra, convoco una reunion
+    entre lideres, discutiendo sobre que iban a hacer ya que tenian el poder a la
+    mano, asi que con esto en mente, tomaron en posecion los tesoros mas preciados
+    del pais, los cuales poseian una energia en particular que iba a usar Kabutetsu
+    en contra de del pa\xEDs, asi reinando toda Jap\xF3n. Entre este revuelo, la
+    aldea de Wisuka la cual tenia uno de estos artefactos fue saqueada por los insectos
+    en fila de Kabutetsu, de manera que robaron aquel objecto llevandose a una parte
+    de la aldea. Con una mente enfurecida, sobre todo con el se\xF1or de sus tierras,
+    Wisuka solamente tomo su arma y se lanzo al castillo de Kabutetsu infiltrandose
+    por una peque\xF1a entrada, iniciando esta historia."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2130f3e1407326444871865dc4ff09a2, type: 2}
+  m_sharedMaterial: {fileID: -1776515412583057781, guid: 2130f3e1407326444871865dc4ff09a2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -323,8 +335,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31.3
-  m_fontSizeBase: 31.3
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -434,8 +446,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 615, y: 411}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 641, y: 88}
+  m_SizeDelta: {x: 244.929, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1522316196
 MonoBehaviour:
@@ -506,7 +518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.3764706}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -556,17 +568,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639988151}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1522316194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3.411, y: 0}
+  m_SizeDelta: {x: 230.189, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1639988153
 MonoBehaviour:
@@ -592,15 +604,15 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2130f3e1407326444871865dc4ff09a2, type: 2}
+  m_sharedMaterial: {fileID: -1776515412583057781, guid: 2130f3e1407326444871865dc4ff09a2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4282072063
+  m_fontColor: {r: 1, g: 0.23113209, b: 0.23113209, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

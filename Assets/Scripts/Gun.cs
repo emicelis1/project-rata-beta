@@ -19,11 +19,25 @@ public class Gun : MonoBehaviour
     public LayerMask raycastLayerMask;
     public LayerMask enemyLayerMask;
     public EnemyManager enemyManager;
+
+    public Animator weaponAnimator;
+    public Sprite weaponIcon;
+
     void Start()
     {
         gunTrigger = GetComponent<BoxCollider>();
         gunTrigger.size = new Vector3(1, verticalRange, range);
         gunTrigger.center = new Vector3(0, 0, range * 0.5f);
+
+        if (weaponAnimator == null)
+        {
+            weaponAnimator = GetComponentInChildren<Animator>();
+        }
+
+        if (CanvasManager.Instance != null && weaponIcon != null)
+        {
+            CanvasManager.Instance.UpdateGearIndicator(weaponIcon);
+        }
     }
 
 
@@ -41,6 +55,10 @@ public class Gun : MonoBehaviour
         Collider[] enemyColliders;
         enemyColliders = Physics.OverlapSphere(transform.position, gunShotRadius, enemyLayerMask);
 
+        if (weaponAnimator != null)
+        {
+            weaponAnimator.SetTrigger("Slash");
+        }
 
         foreach (var enemyCollider in enemyColliders)
         {

@@ -5,7 +5,6 @@ public class CanvasManager : MonoBehaviour
 {
     public TextMeshProUGUI health;
     public TextMeshProUGUI armor;
-    public TextMeshProUGUI weapon;
 
     public Image healthIndicator;
     public Image GearIndicator;
@@ -73,9 +72,12 @@ public class CanvasManager : MonoBehaviour
     }
 
 
-    public void UpdateGearIndicator()
+    public void UpdateGearIndicator(Sprite weaponSprite)
     {
-
+        if (GearIndicator != null && weaponSprite != null)
+        {
+            GearIndicator.sprite = weaponSprite;
+        }
     }
 
     public void UpdateKeys(string keyColor)

@@ -240,10 +240,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.8430586
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.019751549, y: 0, z: 0}
 --- !u!54 &8494347348434702015
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   gunHitEffect: {fileID: 2254287331719734621, guid: 3ab7db03d02fe844f80b251634d129cf, type: 3}
-  attackDamage: 10
+  attackDamage: 20
 --- !u!114 &5299597470296244970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,6 +317,9 @@ MonoBehaviour:
   fireRate: 1.5
   waypoints: []
   waypointThreshold: 0.5
+  visionObstacleLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &8041648904523637849
 MonoBehaviour:
   m_ObjectHideFlags: 0
