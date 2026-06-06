@@ -80,10 +80,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.9104755
-  m_Height: 2
+  m_Radius: 1.0251179
+  m_Height: 2.0502357
   m_Direction: 1
-  m_Center: {x: 0.025145292, y: 0, z: 0}
+  m_Center: {x: -0.008153915, y: 0, z: 0}
 --- !u!54 &91998982798788220
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de782d5c66b113c4a83348fb0a151313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  enemyHealth: 2
   gunHitEffect: {fileID: 2254287331719734621, guid: 3ab7db03d02fe844f80b251634d129cf, type: 3}
   attackDamage: 10
 --- !u!114 &3904105968556688302

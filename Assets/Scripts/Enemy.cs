@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     private Animator spriteAnim;
     private AngleToPlayer angleToPlayer;
 
-    private float enemyHealth = 2f;
+    public float enemyHealth = 2f;
 
     public GameObject gunHitEffect;
 
@@ -35,7 +35,7 @@ public class Enemy : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning($"Ojo: Se destruyó {gameObject.name} pero no se encontró un EnemyManager en la escena.");
+                Debug.LogWarning($"Se destruyó {gameObject.name} pero no se encontró un EnemyManager en la escena.");
             }
 
             Destroy(gameObject);

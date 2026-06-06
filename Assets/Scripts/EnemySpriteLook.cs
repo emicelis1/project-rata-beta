@@ -10,7 +10,6 @@ public class EnemySpriteLook : MonoBehaviour
         _target = FindFirstObjectByType<PlayerMove>().transform;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (canLookVertically)

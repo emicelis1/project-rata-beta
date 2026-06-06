@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class Gun : MonoBehaviour
@@ -23,7 +23,7 @@ public class Gun : MonoBehaviour
     public Animator weaponAnimator;
     public Sprite weaponIcon;
 
-    void Start()
+    void OnEnable()
     {
         gunTrigger = GetComponent<BoxCollider>();
         gunTrigger.size = new Vector3(1, verticalRange, range);
@@ -51,7 +51,6 @@ public class Gun : MonoBehaviour
 
     void Fire()
     {
-
         Collider[] enemyColliders;
         enemyColliders = Physics.OverlapSphere(transform.position, gunShotRadius, enemyLayerMask);
 
@@ -62,15 +61,25 @@ public class Gun : MonoBehaviour
 
         foreach (var enemyCollider in enemyColliders)
         {
-            enemyCollider.GetComponent<EnemyAwareness>().isAggro = true;
+            
+            if (enemyCollider != null && enemyCollider.GetComponent<EnemyAwareness>() != null)
+            {
+                enemyCollider.GetComponent<EnemyAwareness>().isAggro = true;
+            }
         }
-        // Audio
+
         GetComponent<AudioSource>().Stop();
         GetComponent<AudioSource>().Play();
 
-        //dañar el enemigo
+        
         foreach (var enemy in enemyManager.enemiesInTrigger)
         {
+            
+            if (enemy == null)
+            {
+                continue;
+            }
+
             var dir = enemy.transform.position - transform.position;
 
             RaycastHit hit;
@@ -82,7 +91,6 @@ public class Gun : MonoBehaviour
 
                     if (dist > range * 0.5f)
                     {
-                        //hacer daño
                         enemy.TakeDamage(smallDamage);
                     }
                     else
@@ -93,27 +101,24 @@ public class Gun : MonoBehaviour
             }
         }
 
-
         nextTimeToFire = Time.time + fireRate;
     }
 
     private void OnTriggerEnter(Collider other)
-    {
-        // enemigo en rango
+    {        
         Enemy enemy = other.GetComponent<Enemy>();
-
-        if (enemy)
+       
+        if (enemy != null && enemyManager != null)
         {
             enemyManager.AddEnemy(enemy);
         }
     }
 
     private void OnTriggerExit(Collider other)
-    {
-        // enemigo fuera de rango
+    {       
         Enemy enemy = other.GetComponent<Enemy>();
-
-        if (enemy)
+        
+        if (enemy != null && enemyManager != null)
         {
             enemyManager.RemoveEnemy(enemy);
         }

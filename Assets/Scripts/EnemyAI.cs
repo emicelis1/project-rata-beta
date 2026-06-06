@@ -17,9 +17,9 @@ public class EnemyAI : MonoBehaviour
     public float fireRate = 1.5f;
     private float nextFireTime;
 
-    [Header("Configuración de Ruta (Ciempiés)")]
-    public Transform[] waypoints;        // Arrastra aquí los puntos por donde caminará
-    public float waypointThreshold = 0.5f; // Qué tan cerca debe estar del punto para ir al siguiente
+    [Header("Centipede Settings")]
+    public Transform[] waypoints;        
+    public float waypointThreshold = 0.5f; 
     private int currentWaypointIndex = 0;
 
     [Header("Línea de Visión")]
